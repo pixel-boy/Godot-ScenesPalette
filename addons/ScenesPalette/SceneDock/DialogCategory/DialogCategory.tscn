@@ -1,0 +1,111 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/ScenesPalette/SceneDock/DialogCategory/DialogCategory.gd" type="Script" id=1]
+
+[sub_resource type="Image" id=3]
+data = {
+"data": PoolByteArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
+"format": "LumAlpha8",
+"height": 16,
+"mipmaps": false,
+"width": 16
+}
+
+[sub_resource type="ImageTexture" id=2]
+flags = 4
+flags = 4
+image = SubResource( 3 )
+size = Vector2( 16, 16 )
+
+[node name="DialogCategory" type="ConfirmationDialog"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 150, 52.5 )
+popup_exclusive = true
+window_title = "New category"
+dialog_hide_on_ok = false
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+anchor_left = 0.0185547
+anchor_top = 0.0183333
+anchor_right = 0.980469
+anchor_bottom = 0.911667
+margin_left = -1.50001
+margin_top = 2.72001
+margin_right = 1.99988
+margin_bottom = -10.5601
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxIcon" type="VBoxContainer" parent="HBoxContainer2"]
+margin_right = 164.0
+margin_bottom = 244.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="BtnIcon" type="Button" parent="HBoxContainer2/VBoxIcon"]
+margin_right = 164.0
+margin_bottom = 218.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Select icon..."
+expand_icon = true
+
+[node name="BtnClearIcon" type="Button" parent="HBoxContainer2/VBoxIcon"]
+margin_top = 222.0
+margin_right = 164.0
+margin_bottom = 244.0
+text = "clear icon."
+icon = SubResource( 2 )
+
+[node name="VBoxName" type="VBoxContainer" parent="HBoxContainer2"]
+margin_left = 168.0
+margin_top = 92.0
+margin_right = 496.0
+margin_bottom = 152.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LblName" type="Label" parent="HBoxContainer2/VBoxName"]
+margin_right = 328.0
+margin_bottom = 14.0
+text = "Name:"
+
+[node name="LineEditName" type="LineEdit" parent="HBoxContainer2/VBoxName"]
+margin_top = 18.0
+margin_right = 328.0
+margin_bottom = 42.0
+focus_mode = 1
+size_flags_horizontal = 3
+placeholder_text = "Enter category name..."
+caret_blink = true
+caret_blink_speed = 0.5
+
+[node name="LblInvalidName" type="Label" parent="HBoxContainer2/VBoxName"]
+margin_top = 46.0
+margin_right = 328.0
+margin_bottom = 60.0
+text = "Category name already used"
+
+[node name="JustShow" type="Timer" parent="."]
+wait_time = 0.01
+one_shot = true
+autostart = true
+[connection signal="pressed" from="HBoxContainer2/VBoxIcon/BtnIcon" to="." method="_on_btn_icon_pressed"]
+[connection signal="pressed" from="HBoxContainer2/VBoxIcon/BtnClearIcon" to="." method="_on_clear_icon_pressed"]
+[connection signal="text_changed" from="HBoxContainer2/VBoxName/LineEditName" to="." method="_on_text_changed"]
+[connection signal="timeout" from="JustShow" to="." method="_on_just_show"]
